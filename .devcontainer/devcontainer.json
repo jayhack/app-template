@@ -7,6 +7,5 @@
       "extensions": ["dbaeumer.vscode-eslint"]
     }
   },
-  "overrideCommand": false,
   "forwardPorts": [8080]
 }

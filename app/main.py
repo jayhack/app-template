@@ -1,18 +1,13 @@
 """
-Demo project
-
-Simplest project you can imagine:
-- sets the project
-- receives messages from slack
-- gets an AI response
-- gets an AI response
-- posts back to slack
+App template
+- Update your APP_NAME
+- Set your URL appropriately
 """
 from ai.ai import ai
-from ai.message import Message
+from ai.utils.message import Message
 
-APP_NAME = 'demo-agent'
-ai.init(APP_NAME)
+APP_NAME = 'debug-app'
+ai.init(APP_NAME, url='https://8c17-73-241-110-178.ngrok.io')
 
 
 async def handle_message(msg: Message):
@@ -26,3 +21,4 @@ async def handle_message(msg: Message):
 
 if __name__ == "__main__":
     ai.start(handle_message)
+
